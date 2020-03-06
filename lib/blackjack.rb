@@ -29,7 +29,13 @@ end
 
 def end_game(total)
   
-  puts "Sorry, you hit #{total}. Thanks for playing!"
+  if total == 21
+    puts "Congratulations, you hit #{total}! Thanks for playing!"
+  else
+    if total > 21
+      puts "Sorry, you hit #{total}. Thanks for playing!"
+    end
+  end
 
 end
 
